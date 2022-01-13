@@ -19,27 +19,31 @@
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "lint": "eslint app/",
-    "lint:fix": "eslint app/ --fix"
+    "lint:fix": "eslint app/ --fix",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expo/vector-icons": "6.2.0",
-    "auth0-js": "^9.2.0",
+    "@expo/vector-icons": "10.0.0",
+    "auth0-js": "^9.13.2",
     "color": "2.0.0",
-    "expo": "^23.0.4",
+    "expo": "^39.0.1",
     "hoist-non-react-statics": "2.3.0",
     "moment": "2.18.1",
-    "prop-types": "^15.6.0",
-    "react": "16.0.0",
-    "react-native": "0.50.3",
+    "prop-types": "^15.6.2",
+    "react": "16.5.0",
+    "react-native": "0.64.0",
     "react-native-dropdownalert": "3.1.2",
     "react-native-extended-stylesheet": "0.8.0",
-    "react-navigation": "1.0.0-beta.21",
+    "react-navigation": "1.0.0",
     "react-redux": "5.0.4",
     "redux": "3.7.2",
     "redux-logger": "3.0.1",
-    "redux-saga": "0.16.0"
-  }
+    "redux-saga": "0.16.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
